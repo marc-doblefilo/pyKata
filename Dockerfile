@@ -6,7 +6,7 @@ RUN apt-get install -y python3 python3-pip python3-dev && pip install --upgrade 
 RUN pip install -U pytest
 RUN pip install pytest-sugar
 
-RUN apt-get install -y nano
+RUN apt-get install -y nano vim
 
 RUN apt-get update -y && apt-get install git -y
 

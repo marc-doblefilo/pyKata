@@ -1,18 +1,24 @@
+# Pykata
+
 step 1: build the container image
 
-	docker build -t pykata .
-	
+	make build	
 
-step 2: run the container image
+step 2: start the container
 	
-	docker run --rm -it -v ${PWD}:/app pykata:latest /bin/sh
+	make start
 	
 	
-step 3: funny one; write some code
+step 3: interact with container's shell
 
+	make bash
 
 step 4: test your code!
 	
 	pytest
 	
-And btw, remember to leave it cleaner than you found it. Use docker stop !!
+step 5: ALWAYS REMEMBER TO STOP THE CONTAINER
+
+	make stop
+
+And btw, remember to leave it cleaner than you found it.
